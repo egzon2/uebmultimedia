@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800", rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Emotions</title>
+    <script defer src="face-api.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html"><img src="images/logo.svg" width="40px" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="emotions.html" class="active">Emotions</a>
+        <!-- <a href="mission.html">Our mission</a> -->
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="about_slogan">
+        <h1>Emotions</h1>
+        <p class="paragraph_style">A conscious mental reaction (such as anger or fear) subjectively 
+            experienced <br> as strong feeling usually directed toward a specific object and
+             typically accompanied by physiological and behavioral changes in the body</p>
+    </div>
+      
+      <div class="grid_by_two">
+          <div class="content_style_poppins item1">
+             <h1>Learn something about<br> Emotions</h1>
+             <p>
+                Emotions are biological states associated with the nervous system 
+                brought on by neurophysiological changes variously associated with thoughts, 
+                feelings, behavioural responses, and a degree of pleasure or displeasure. 
+                There is currently no scientific consensus on a definition
+             </p>
+          </div>
+          <div class="item2">
+              <img alt="happy people" class="responsive_image" src="images/happy.svg" width="530px" height="370px">
+         </div>
+
+      </div>
+
+      <div class="grid_by_two_reversed">
+        <div>
+            <img alt="conversation" class="responsive_image" src="images/communication.svg" width="530px" height="370px">
+       </div>
+        <div class="content_style_poppins">
+           <h1>The most important thing in communication is hearing what isn't said</h1>
+           <p>
+              The function of emotion appeared to have evolved from a physiological to a communicative one, allowing others to understand one’s emotional state.
+              Emotions have an external function, informing others about our internal states and feelings: emotional states have a communicative function.
+           </p>
+        </div>
+    </div>
+
+    <div class="about_slogan">
+        <h1>Six Basic emotions</h1>
+        <p class="paragraph_style">Happiness, Anger, Fear, Disgust, Sadness, Surprise</p>
+    </div>
+
+    <div class="table_row">
+        <div class="table_shelve">
+            <div class="tile2 quote">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div id="happy-img" class="flip-card-front">
+                         <img src="images/happy.png" alt="smiley">
+                      </div>
+                      <div class="flip-card-back happy quote">
+                        <h1>Happy</h1>
+                        <p>Emotion involving a strong sense of self-esteem and belief in yourself</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="tile2 quote">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div id="angry-img" class="flip-card-front">
+                         <img src="images/angry.png" alt="angry"> 
+                      </div>
+                      <div class="flip-card-back angry quote">
+                        <h1>Angry</h1>
+                        <p>Anger, also known as rage, is an intense emotional state involving
+                             a strong uncomfortable and non-cooperative
+                              response to a perceived provocation, hurt or threat.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="tile2 quote">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div id="scared-img" class="flip-card-front">
+                         <img src="images/fear.png" width="300px" alt="fear"> 
+                      </div>
+                      <div class="flip-card-back fear quote">
+                        <h1>Scared</h1>
+                        <p>Fear is an emotion induced by perceived danger or threat,
+                             which causes physiological changes and ultimately behavioral changes,
+                              such as fleeing, hiding, or freezing from perceived traumatic events</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="tile2 quote">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div id="disgusted-img" class="flip-card-front">
+                         <img src="images/disgusted.png" width="300px" alt="fear"> 
+                      </div>
+                      <div class="flip-card-back disgust quote">
+                        <h1>Disgusted</h1>
+                        <p>
+                            Disgust is an emotional response of rejection or revulsion to something potentially contagious or something considered offensive, distasteful, or unpleasant. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="tile2 quote">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div id="sad-img" class="flip-card-front">
+                         <img src="images/sad.png" width="300px" alt="sad"> 
+                      </div>
+                      <div class="flip-card-back sad quote">
+                        <h1>Sad</h1>
+                        <p>
+                            Sadness is an emotional pain associated with, or characterized by, feelings of disadvantage, loss, despair, grief, helplessness, disappointment and sorrow.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="tile2 quote">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div id="surprised-img" class="flip-card-front">
+                         <img src="images/surprised.png" width="300px" alt="surprised"> 
+                      </div>
+                      <div class="flip-card-back surprised quote">
+                        <h1>Surprised</h1>
+                        <p>
+                            Surprise is another one of the six basic types of human emotions originally described by Eckman. 
+                            Surprise is usually quite brief and is characterized by a physiological startle response following something unexpected. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+        
+
+    <footer class="footer">
+      <div class="fitem-1">
+          <h2>Navigation</h2>
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="emotions.html">Emotions</a></li>
+                  <!-- <li><a href="mission.html">Our mission</a></li> -->
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+
+              </ul>
+          </div>
+      </div>
+
+      <div class="fitem-2">
+              <h2>Newsletter</h2>
+              <div class"newsletter">
+                  <p>Enter your email address and subcribe daily newsletter</p>
+                  <form method="post">
+                      <input class="email-form"type="email" placeholder="johdoe@example.com">
+                      <button class="submit-button"type="submit" data-validation="required email">Subscribe</button>
+                  </form>
+              </div>
+  
+              <div class="social">
+                  <a href=""><i class="fab fcolor fa-facebook fa-2x"></i></a>
+                  <a href=""><i class="fab tcolor fa-twitter fa-2x"></i></a>
+                  <a href=""><i class="fab licolor fa-linkedin-in fa-2x"></i></a>
+                  <a href=""><i class="fab instcolor fa-instagram fa-2x"></i></a>
+                  <a href=""><i class="fab mediumcolor fa-medium fa-2x"></i></a>
+                  
+              </div>
+  
+          </div>
+
+          <div class="fitem-3">
+            <h2>Contacts</h2>
+            <div class="our-app">
+                <div class="android-app">
+                    <i class="fas fa-phone"></i>
+                    <p style="text-align: center"><span>Kosova:</span>(+383) 44 123 456</p>
+                </div>
+
+                <div class="android-app">
+                    <i class="fas fa-phone"></i>
+                    <p style="text-align: center"><span>USA:</span>(+1) 123 456 7891</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </footer>  <!--footer ends here-->
+
+    <!-- Happy Sound Swoosh -->
+    <audio id="happiness-audio" preload="auto">
+        <source src="audio/happiness.mp3"></source>
+        <source src="audio/yay.ogg"></source>
+    </audio>
+
+    <!-- Anger Sound Swoosh -->
+    <audio id="anger-audio" preload="auto">
+        <source src="audio/anger.mp3"></source>
+        <source src="audio/yay.ogg"></source>
+    </audio>
+
+    <!-- Fear Sound Swoosh -->
+    <audio id="fear-audio" preload="auto">
+        <source src="audio/fear.mp3"></source>
+        <source src="audio/yay.ogg"></source>
+    </audio>
+
+    <!-- Disgust Sound Swoosh -->
+    <audio id="disgust-audio" preload="auto">
+        <source src="audio/disgust.mp3"></source>
+        <source src="audio/yay.ogg"></source>
+    </audio>
+
+    <!-- Sadness Sound Swoosh -->
+    <audio id="sadness-audio" preload="auto">
+        <source src="audio/sadness.mp3"></source>
+        <source src="audio/yay.ogg"></source>
+    </audio>
+
+    <!-- Surprise Sound Swoosh -->
+    <audio id="surprise-audio" preload="auto">
+        <source src="audio/surprise.mp3"></source>
+        <source src="audio/yay.ogg"></source>
+    </audio>
+
+    <script>
+        // happiness
+        var happiness = $("#happiness-audio")[0];
+        $("#happy-img").mouseenter(function() {
+            happiness.play();
+        });
+
+        var anger = $("#anger-audio")[0];
+        $("#angry-img").mouseenter(function() {
+            anger.play();
+        });
+
+        var fear = $("#fear-audio")[0];
+        $("#scared-img").mouseenter(function() {
+            fear.play();
+        });
+
+        var disgust = $("#disgust-audio")[0];
+        $("#disgusted-img").mouseenter(function() {
+            disgust.play();
+        });
+
+        var sadness = $("#sadness-audio")[0];
+        $("#sad-img").mouseenter(function() {
+            sadness.play();
+        });
+
+        var surprise = $("#surprise-audio")[0];
+        $("#surprised-img").mouseenter(function() {
+            surprise.play();
+        });
+
+    </script>
+
+</body>
+</html>
